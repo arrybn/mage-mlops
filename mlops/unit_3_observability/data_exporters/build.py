@@ -52,11 +52,11 @@ def test_dataset(
     *args,
 ) -> None:
     assert (
-        X.shape[0] == 105870
-    ), f'Entire dataset should have 105870 examples, but has {X.shape[0]}'
+        X.shape[0] == 3316216
+    ), f'Entire dataset should have 3316216 examples, but has {X.shape[0]}'
     assert (
-        X.shape[1] == 7027
-    ), f'Entire dataset should have 7027 features, but has {X.shape[1]}'
+        X.shape[1] == 23011
+    ), f'Entire dataset should have 23011 features, but has {X.shape[1]}'
     assert (
         len(y.index) == X.shape[0]
     ), f'Entire dataset should have {X.shape[0]} examples, but has {len(y.index)}'
@@ -73,11 +73,11 @@ def test_training_set(
     *args,
 ) -> None:
     assert (
-        X_train.shape[0] == 54378
-    ), f'Training set for training model should have 54378 examples, but has {X_train.shape[0]}'
+        X_train.shape[0] == 2069975
+    ), f'Training set for training model should have 2069975 examples, but has {X_train.shape[0]}'
     assert (
-        X_train.shape[1] == 5094
-    ), f'Training set for training model should have 5094 features, but has {X_train.shape[1]}'
+        X_train.shape[1] == 19716
+    ), f'Training set for training model should have 19716 features, but has {X_train.shape[1]}'
     assert (
         len(y_train.index) == X_train.shape[0]
     ), f'Training set for training model should have {X_train.shape[0]} examples, but has {len(y_train.index)}'
@@ -94,11 +94,11 @@ def test_validation_set(
     *args,
 ) -> None:
     assert (
-        X_val.shape[0] == 51492
-    ), f'Training set for validation should have 51492 examples, but has {X_val.shape[0]}'
+        X_val.shape[0] == 1246241
+    ), f'Training set for validation should have 1246241 examples, but has {X_val.shape[0]}'
     assert (
-        X_val.shape[1] == 5094
-    ), f'Training set for validation should have 5094 features, but has {X_val.shape[1]}'
+        X_val.shape[1] == 19716
+    ), f'Training set for validation should have 19716 features, but has {X_val.shape[1]}'
     assert (
         len(y_val.index) == X_val.shape[0]
     ), f'Training set for training model should have {X_val.shape[0]} examples, but has {len(y_val.index)}'

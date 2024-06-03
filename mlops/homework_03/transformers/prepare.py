@@ -22,7 +22,7 @@ def transform(
     print(split_on_feature)
 
     df = clean(df)
-    df = combine_features(df)
+    # df = combine_features(df)
     df = select_features(df, features=[split_on_feature, target])
 
     df_train, df_val = split_on_value(
@@ -30,5 +30,7 @@ def transform(
         split_on_feature,
         split_on_feature_value,
     )
+
+    print(df.dtypes)
 
     return df, df_train, df_val
